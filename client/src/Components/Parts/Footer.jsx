@@ -12,7 +12,7 @@ export default function Footer() {
                     <div class="part">
                         <h6>ABOUT US</h6>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+                        We create exquisite chocolates, chocolate-covered strawberries, truffles and éclairs - perfect for special occasions or everyday indulgence.
                         </p>
                     </div>
                     <div className="part">

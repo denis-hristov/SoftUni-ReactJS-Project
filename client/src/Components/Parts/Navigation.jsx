@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "/photos/Logo/viber_image_2025-03-23_18-56-14-878.jpg"; // Импортирай логото
+import logo from "/photos/Logo/logo.jpg";
 
 export default function Navigation() {
     const [menuOpen, setMenuOpen] = useState(false);

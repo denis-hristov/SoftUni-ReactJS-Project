@@ -4,13 +4,13 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Contacts from "./Components/Contacts";
 
-import Footer from "./Parts/Footer";
-import Navigation from "./Parts/Navigation";
+import Footer from "./Components/Parts/Footer";
+//import Navigation from "./Parts/Navigation";
 
 function App() {
     
     return(<>
-        <Navigation/>
+        {/* <Navigation/> */}
     
         <Routes>
             <Route path="/" element={<Home />}/>
