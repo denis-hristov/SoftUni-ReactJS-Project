@@ -1,44 +1,43 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import logo from "/photos/Logo/viber_image_2025-03-23_18-56-14-878.jpg"; // Импортирай логото
 
 export default function Navigation() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     const navigation = [
         { name: "Home", path: "/" },
         { name: "About", path: "/about" },
         { name: "Contacts", path: "/contacts" },
     ];
 
-    const pageTitles = {
-        "/": "Vivid Chocolatrie",
-        "/about": "About Vivid Chocolatrie",
-        "/contacts": "Contact Vivid Chocolatrie",
-    };
-
-    const location = useLocation();
-    const currentTitle = pageTitles[location.pathname] || "Denis's Page";
-
     return (
         <nav className="nav-body">
-            <input type="checkbox" id="nav-toggle" />
             <div className="site">
                 <header>
-                    <h1>
-                        <Link to="/">{currentTitle}</Link>
-                    </h1>
+                    <Link to="/">
+                        <img src={logo} alt="Logo" className="logo" />
+                    </Link>
 
-                    <label htmlFor="nav-toggle" className="menu-button">
-                        <span className="open">☰ Menu</span>
-                    </label>
+                    <button
+                        className="menu-button"
+                        onClick={() => setMenuOpen(!menuOpen)}
+                    >
+                        {menuOpen ? "✖ Close" : "☰ Menu"}
+                    </button>
 
-                    <nav className="main-nav">
+                    <nav className={`main-nav ${menuOpen ? "open" : ""}`}>
                         <ul>
                             {navigation.map((item) => (
                                 <li key={item.name}>
-                                    <Link to={item.path}>{item.name}</Link>
+                                    <Link
+                                        to={item.path}
+                                        onClick={() => setMenuOpen(false)} // Затваря менюто при клик
+                                    >
+                                        {item.name}
+                                    </Link>
                                 </li>
                             ))}
-                            <li className="close">
-                                <Link to="/">✖</Link>
-                            </li>
                         </ul>
                     </nav>
                 </header>
