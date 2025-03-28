@@ -1,5 +1,6 @@
 import Navigation from "./Parts/Navigation";
-import GiftSection from "./Sections/GigtSection/GiftSection";
+import GiftSection from "./Sections/GiftSection/GiftSection";
+import ProductSection from "./Sections/ProductSection/ProductSection";
 import ShoppingBonus from "./Sections/ShoppingBonus/ShoppingBonus";
 import TypeSweets from "./Sections/TypeSweets/TypeSweets";
 import baner from "/photos/Strawberries/Boxes/baner_strawberries.jpg";
@@ -21,6 +22,7 @@ export default function Home() {
         <TypeSweets/>
         <GiftSection/>
         <ShoppingBonus/>
+        <ProductSection/>
         </>
     )
 }
