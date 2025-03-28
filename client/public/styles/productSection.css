@@ -97,10 +97,6 @@
     transition: transform 0.3s ease;
   }
 
-  .product-section .button a:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease;
-  }
   
   .product-section .product .img-box {
     background-position: center;

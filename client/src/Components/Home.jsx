@@ -1,5 +1,6 @@
 import Navigation from "./Parts/Navigation";
 import GiftSection from "./Sections/GiftSection/GiftSection";
+import Order from "./Sections/Order/Order";
 import ProductSection from "./Sections/ProductSection/ProductSection";
 import ShoppingBonus from "./Sections/ShoppingBonus/ShoppingBonus";
 import TypeSweets from "./Sections/TypeSweets/TypeSweets";
@@ -23,6 +24,7 @@ export default function Home() {
         <GiftSection/>
         <ShoppingBonus/>
         <ProductSection/>
+        <Order/>
         </>
     )
 }
