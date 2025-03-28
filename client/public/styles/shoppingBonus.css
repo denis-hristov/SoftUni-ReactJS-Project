@@ -1,0 +1,54 @@
+.section-bonuses {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .bonuses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .element {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .element:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .element-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .element-title {
+    font-size: 20px;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .element-info {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+  
