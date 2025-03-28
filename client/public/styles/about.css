@@ -1,0 +1,64 @@
+.about-section {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .about-section p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .images-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-section h1,
+  .about-section h2 {
+    text-align: center;
+    color: #f89cab;
+  }
+  
+  .navigation {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .about-moto {
+      font-size: 2rem;
+    }
+  
+    .about-about {
+      font-size: 1.2rem;
+    }
+  
+    .about-section p {
+      font-size: 1rem;
+    }
+  
+    .images-container {
+      flex-direction: column;
+    }
+  
+    .about-image {
+      max-width: 90%;
+    }
+  }
+  
