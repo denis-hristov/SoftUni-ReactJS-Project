@@ -1,5 +1,7 @@
 import Navigation from "./Parts/Navigation";
-import Carousel from "./Sections/Carousel/Carousel"
+import GiftSection from "./Sections/GigtSection/GiftSection";
+import ShoppingBonus from "./Sections/ShoppingBonus/ShoppingBonus";
+import TypeSweets from "./Sections/TypeSweets/TypeSweets";
 import baner from "/photos/Strawberries/Boxes/baner_strawberries.jpg";
 export default function Home() {
     return(
@@ -16,7 +18,9 @@ export default function Home() {
             </div>
         </div>
 
-        {/* <Carousel/> */}
+        <TypeSweets/>
+        <GiftSection/>
+        <ShoppingBonus/>
         </>
     )
 }
