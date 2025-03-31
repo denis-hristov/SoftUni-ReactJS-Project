@@ -81,3 +81,12 @@
     }
   }
   
+
+  /* Contacts */
+  .bannerContacts {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    color: white;
+}

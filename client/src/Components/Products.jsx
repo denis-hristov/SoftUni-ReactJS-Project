@@ -8,8 +8,10 @@ export default function Products() {
         <div className="bannerProducts">
             <img src={baner} alt="baner" className="baner-photo" />
             <Navigation/>
-            <div className="headingP">
-                <h2>Latest Products</h2>
+            <div className="info">
+                <div className="headingP">
+                    <h2>Latest Products</h2>
+                </div>
             </div>
         </div>
         <AllProductSection/>

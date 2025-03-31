@@ -21,7 +21,6 @@ export default function Order() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Тук можеш да добавиш логика за изпращане на данни (например, към сървър)
     console.log('Submitted Form Data:', formData);
   };
 

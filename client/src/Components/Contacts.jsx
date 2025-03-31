@@ -1,7 +1,15 @@
+import Navigation from "./Parts/Navigation";
+import Order from "./Sections/Order/Order";
+import baner from "/photos/Candy/BanerContacts.jpg";
+
 export default function Contacts() {
     return(
         <>
-            <h1>Contacts Page</h1>
+            <div className="bannerContacts">
+                <img src={baner} alt="baner" className="baner-photo" />
+                <Navigation/>
+            </div>
+            <Order/>
         </>
     )
 }
