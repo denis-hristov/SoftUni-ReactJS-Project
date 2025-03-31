@@ -3,6 +3,7 @@ import React from 'react';
 import products from './InfoAllProducts';
 import { Link } from 'react-router-dom';
 
+
 export default function ProductSection() {
     const [sortType, setSortType] = useState('default');
 
@@ -33,21 +34,21 @@ export default function ProductSection() {
 
         <div className="map">
           {sortedItems.map((product) => (
-            <div key={product.id} className="product">
-              <div className="box">
-                <Link to="#">
-                  <div className="img-box">
-                    <img src={product.image} alt={product.name} />
-                  </div>
-                  <div className="detail-box">
-                    <h6>{product.name}</h6>
-                    <h6>
-                      Price <span>{product.price}</span>
-                    </h6>
-                  </div>
-                </Link>
+              <div key={product.id} className="product">
+                <div className="box">
+                  <Link to="#">
+                    <div className="img-box">
+                      <img src={product.image} alt={product.name} />
+                    </div>
+                    <div className="detail-box">
+                      <h6>{product.name}</h6>
+                      <h6>
+                        Price <span>{product.price}</span>
+                      </h6>
+                    </div>
+                  </Link>
+                </div>
               </div>
-            </div>
           ))}
         </div>
     </section>

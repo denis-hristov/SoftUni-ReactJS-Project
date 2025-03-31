@@ -146,3 +146,13 @@ footer > p {
         width: 22%;
     }
 }
+
+
+/* Еррор404 */
+.error404 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #f89cab;
+    text-align: center;
+    margin: 3em 0;
+}
