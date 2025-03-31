@@ -18,16 +18,13 @@ export default function GiftSection() {
                         loved ones
                     </h2>
                     <p>
-                        Omnis ex nam laudantium odit illum harum, excepturi accusamus
-                        at corrupti, velit blanditiis unde perspiciatis, vitae minus
-                        culpa? Beatae at aut consequuntur porro adipisci aliquam
-                        eaque iste ducimus expedita accusantium?
+                    Looking for the perfect way to surprise your loved one? Our Chocolate-Covered Strawberry Bouquet is the ultimate gift that combines romance, elegance and irresistible taste. Make your special moments even sweeter! Order now and deliver a delightful surprise straight to their heart.
                     </p>
                     <div className="btn-box">
                       <a href="#" className="btn1">
                         Buy Now
                       </a>
-                      <a href="#" className="btn2">
+                      <a href="/products" className="btn2">
                         See More
                       </a>
                     </div>

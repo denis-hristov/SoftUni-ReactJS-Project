@@ -29,7 +29,7 @@ export default function Order() {
       <div className="order-info">
           <h2 className="info-title">FORM & TIME SCHEDULE</h2>
           <p className="info-desc">
-            At solmen li esser necessi uniform grammatica, pronunciation
+          Place an order for your unique box of chocolate delight and set a specific delivery date.
           </p>
       </div>
           <div className="order">

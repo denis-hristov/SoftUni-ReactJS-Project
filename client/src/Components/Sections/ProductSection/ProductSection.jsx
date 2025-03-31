@@ -1,5 +1,5 @@
 import React from 'react';
-import products from './InfoProducts';
+import products from './AllProducts/InfoAllProducts';
 import { Link } from 'react-router-dom';
 
 export default function ProductSection() {
@@ -9,7 +9,7 @@ export default function ProductSection() {
           <h2>Latest Products</h2>
         </div>
         <div className="map">
-          {products.map((product) => (
+          {products.slice(0, 8).map((product) => (
             <div key={product.id} className="product">
               <div className="box">
                 <Link to="#">
