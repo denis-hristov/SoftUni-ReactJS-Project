@@ -13,8 +13,6 @@
   }
   
   .images-container {
-    display: flex;
-    justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
   }
@@ -40,6 +38,27 @@
     color: #fff;
   }
   
+  @media (min-width: 769px) {
+    .part1, .part2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .part2{
+        flex-direction: row-reverse;
+    }
+
+    .part1 p, .part2 p{
+        padding: 2em;
+    }
+
+    .about-image {
+        max-width: 100%;
+        max-height: auto;
+      }
+
+  }
+
   @media (max-width: 768px) {
     .about-moto {
       font-size: 2rem;
