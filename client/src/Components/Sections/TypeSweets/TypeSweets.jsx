@@ -1,7 +1,7 @@
 import React from "react";
 
 const images = [
-  { src: "/photos/Candy/MainCandy.jpg", alt: "Item 1", link: "#", text: "Candy" },
+  { src: "/photos/Candy/Candy1.jpg", alt: "Item 1", link: "#", text: "Candy" },
   { src: "/photos/Strawberries/Boxes/MainStrawberries.jpg", alt: "Item 2", link: "#", text: "Strawberries" },
   { src: "/photos/Chocolates/MainChocolates.jpg", alt: "Item 3", link: "#", text: "Chocolates" },
   { src: "/photos/Eclairs/MainEclairs.jpg", alt: "Item 4", link: "#", text: "Eclairs" },

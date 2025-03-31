@@ -1,5 +1,6 @@
 import React from 'react';
 import products from './InfoProducts';
+import { Link } from 'react-router-dom';
 
 export default function ProductSection() {
   return (
@@ -11,7 +12,7 @@ export default function ProductSection() {
           {products.map((product) => (
             <div key={product.id} className="product">
               <div className="box">
-                <a href="#">
+                <Link to="#">
                   <div className="img-box">
                     <img src={product.image} alt={product.name} />
                   </div>
@@ -24,13 +25,13 @@ export default function ProductSection() {
                   <div className="new">
                     <span>New</span>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           ))}
         </div>
         <div className="button">
-          <a href="">View All Products</a>
+          <Link to="/products">View All Products</Link>
         </div>
     </section>
   );

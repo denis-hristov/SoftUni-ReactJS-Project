@@ -35,6 +35,30 @@ const products = [
       price: '$70',
       image: '/photos/Strawberries/Types/Type6.jpg',
     },
+    {
+      id: 7,
+      name: 'Flower Bouquet',
+      price: '$70',
+      image: '/photos/Candy/Type1.jpg',
+    },
+    {
+      id: 8,
+      name: 'Flower Bouquet',
+      price: '$70',
+      image: '/photos/Candy/Type2.jpg',
+    },
+    {
+      id: 9,
+      name: 'Flower Bouquet',
+      price: '$70',
+      image: '/photos/Candy/Type3.jpg',
+    },
+    {
+      id: 10,
+      name: 'Flower Bouquet',
+      price: '$70',
+      image: '/photos/Candy/Type4.jpg',
+    },
   ];
 
 export default products;

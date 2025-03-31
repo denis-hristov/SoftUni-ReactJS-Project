@@ -5,9 +5,12 @@ import baner from "/photos/Strawberries/Boxes/banerProducts.jpg";
 export default function Products() {
     return(
         <>
-        <div className="banner">
+        <div className="bannerProducts">
             <img src={baner} alt="baner" className="baner-photo" />
             <Navigation/>
+            <div className="headingP">
+                <h2>Latest Products</h2>
+            </div>
         </div>
         <AllProductSection/>
         <Order/>
