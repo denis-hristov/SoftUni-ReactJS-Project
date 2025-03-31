@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import giftImage from "/photos/Strawberries/Bouquet/GiftSection.jpg";
 
 export default function GiftSection() {
@@ -21,12 +22,12 @@ export default function GiftSection() {
                     Looking for the perfect way to surprise your loved one? Our Chocolate-Covered Strawberry Bouquet is the ultimate gift that combines romance, elegance and irresistible taste. Make your special moments even sweeter! Order now and deliver a delightful surprise straight to their heart.
                     </p>
                     <div className="btn-box">
-                      <a href="#" className="btn1">
+                      <Link to="#" className="btn1">
                         Buy Now
-                      </a>
-                      <a href="/products" className="btn2">
+                      </Link>
+                      <Link to="/products?type=strawberries&sort=price-desc" className="btn2">
                         See More
-                      </a>
+                      </Link>
                     </div>
                 </div>
             </div>
