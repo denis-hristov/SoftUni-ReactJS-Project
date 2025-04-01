@@ -2,7 +2,7 @@ import Navigation from "./Parts/Navigation";
 import Order from "./Sections/Order/Order";
 import AllProductSection from "./Sections/ProductSection/AllProducts/AllProducts";
 import baner from "/photos/Strawberries/Boxes/banerProducts.jpg";
-export default function Products() {
+export default function Products({addToCart}) {
     return(
         <>
         <div className="bannerProducts">
@@ -14,7 +14,7 @@ export default function Products() {
                 </div>
             </div>
         </div>
-        <AllProductSection/>
+        <AllProductSection addToCart={addToCart}/>
         <Order/>
         </>
     )

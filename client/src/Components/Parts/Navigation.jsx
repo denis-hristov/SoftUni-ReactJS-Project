@@ -10,6 +10,7 @@ export default function Navigation() {
         { name: "Products", path: "/products" },
         { name: "About", path: "/about" },
         { name: "Contacts", path: "/contacts" },
+        { name: "Cart", path: "/cart" },
     ];
 
     return (

@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import products from './InfoAllProducts';
 import { Link } from 'react-router-dom';
 
-export default function ProductSection() {
+export default function ProductSection({addToCart}) {
     const [searchParams, setSearchParams] = useSearchParams();
     const filterType = searchParams.get('type') || 'all';
     const sortType = searchParams.get('sort') || 'default';
+
 
     const filteredItems = products.filter(product => 
         filterType === 'all' || product.type === filterType
@@ -60,6 +60,7 @@ export default function ProductSection() {
                                     <h6>Price <span>{product.price}</span></h6>
                                 </div>
                             </Link>
+                            <button className='buyButton' onClick={() => addToCart(product)}>Add to Cart</button>
                         </div>
                     </div>
                 ))}
