@@ -1,4 +1,37 @@
+import { useRef } from "react";
+
 export default function Footer() {
+  const emailRef = useRef(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const email = emailRef.current?.value.trim();
+    if (!email) {
+      alert("Please enter a valid email!");
+      return;
+  }
+
+    try {
+        const response = await fetch('http://localhost:3030/data/emailList', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email })
+        });
+
+        if (response.ok) {
+            alert("Successfully subscribed!");
+            emailRef.current.value = "";
+        } else {
+            alert("Failed to subscribe!");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("An error occurred!");
+    }
+};
     return(
         <>
             <footer>
@@ -18,8 +51,8 @@ export default function Footer() {
                     <div className="part">
                       <div className="info_form ">
                         <h5>Newsletter</h5>
-                        <form>
-                          <input type="email" placeholder="Enter your email"/>
+                        <form onSubmit={handleSubmit}>
+                          <input type="email" ref={emailRef} placeholder="Enter your email"/>
                           <button>SUBSCRIBE</button>
                         </form>
                       </div>
