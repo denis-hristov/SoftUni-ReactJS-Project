@@ -30,7 +30,7 @@ export default function Register() {
 
     // backend
     try {
-      const response = await fetch("http://localhost:5173/users", {
+      const response = await fetch("http://localhost:3030/data/db", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

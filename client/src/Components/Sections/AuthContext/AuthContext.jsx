@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (email, password) => {
         try {
-            const response = await fetch("https://softuni-practice-server.com/login", {
+            const response = await fetch("http://localhost:3030/data/db", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email, password }),
