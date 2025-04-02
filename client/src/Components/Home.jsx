@@ -24,7 +24,7 @@ export default function Home({ addToCart }) {
         <TypeSweets/>
         <GiftSection addToCart={addToCart}/>
         <ShoppingBonus/>
-        <ProductSection/>
+        <ProductSection addToCart={addToCart}/>
         <Order/>
         </>
     )

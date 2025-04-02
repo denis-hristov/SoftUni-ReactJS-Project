@@ -1,10 +1,8 @@
 import React from 'react';
 import products from './AllProducts/InfoAllProducts';
 import { Link } from 'react-router-dom';
-import { useCart } from '../Cart/CartContext';
 
-export default function ProductSection() {
-  const { addToCart } = useCart();
+export default function ProductSection({addToCart}) {
   return (
     <section className="product-section">
         <div className="heading">

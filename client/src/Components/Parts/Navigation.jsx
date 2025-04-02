@@ -11,6 +11,7 @@ export default function Navigation() {
         { name: "About", path: "/about" },
         { name: "Contacts", path: "/contacts" },
         { name: "Cart", path: "/cart" },
+        { name: "LogIn", path: "/login" },
     ];
 
     return (
